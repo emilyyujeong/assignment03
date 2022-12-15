@@ -154,18 +154,18 @@
     padding: 0 5px;
 }
 
-.mainVisual .mainSlide .inner:hover a {
+.mainVisual .mainSlide .inner a:hover {
     color: #333;
     background: #fff;
 }
 
 
+
+
+
+
+
 /*mainContent.....................................*/
-
-
-
-
-
 
 .mainContent {
     text-align: center;
@@ -317,6 +317,8 @@
 .news .inner figure i {
     vertical-align: middle;
 }
+
+
 
 
 /*mainBanner.........................................*/
