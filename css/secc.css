@@ -253,11 +253,14 @@
 }
 
 .news p {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+
+    line-height: 25px;
+
     color: #666666;
-    margin: 0 0 20px 0;
-    line-height: 40px;
+
 }
 
 
@@ -287,7 +290,7 @@
     gap: 30px;
     height: auto;
     background: transparent;
-    margin: 50px auto;
+    margin: 10px auto;
 
 }
 
@@ -298,7 +301,7 @@
 .news .inner figure {
     position: relative;
     font-size: 18px;
-    line-height: 50px;
+    line-height: 35px;
     color: #666666;
 }
 
@@ -326,7 +329,8 @@
 .mainBanner {
     padding: 100px 0;
     text-align: center;
-    background: url(../img/our-bg.jpg)no-repeat center center/cover;
+    background: url(../img/our_bg_br.jpg)no-repeat center center/cover;
+
 }
 
 .mainBanner h2 {
@@ -463,19 +467,16 @@
 
 /* cs section ..................................... */
 
-.cs {
+.cs .inner {
     display: flex;
-
-    height: 359px;
     color: #fff;
     margin: 0 auto;
-    text-align: center;
     background: #3e7ccc;
 }
 
-.cs>div {
+.cs .inner>div {
+    text-align: center;
     flex: 1;
-
 }
 
 .cs .left {
