@@ -19,9 +19,6 @@
     color: #666666;
 }
 
-#header nav>ul>li:hover a {
-    color: #0c4da2;
-}
 
 #header nav>ul a {
     display: block;
@@ -83,8 +80,8 @@
     font-size: 0;
     width: 100px;
     height: 100px;
-    border-top: 1px solid #fff;
-    border-left: 1px solid #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.315);
+    border-left: 1px solid rgba(255, 255, 255, 0.315);
 }
 
 .mainVisual .mainSlide .slick-prev {
@@ -100,8 +97,8 @@
 
 .mainVisual .mainSlide .slick-dots {
     position: absolute;
-    top: 60%;
-    left: 25%;
+    top: 65%;
+    left: 24%;
     transform: translate(-50%, -50%);
 
 }
@@ -109,8 +106,8 @@
 
 .mainVisual .mainSlide .slick-dots>li {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background: rgba(0, 0, 0, 0.2);
     border: 1px solid #fff;
     margin: 5px;
@@ -126,16 +123,23 @@
 }
 
 .mainVisual .mainSlide h2 {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
     margin: -150px 0 15px 0;
     text-shadow: 0 0 3px #000;
     color: #fff;
 }
 
+.mainVisual .mainSlide p-desc {
+    font-size: 30px;
+    margin: 50px 0;
+    color: #fff;
+}
+
 .mainVisual .mainSlide p {
     margin: 50px 0;
     color: #fff;
+    line-height: 20px;
 }
 
 .mainVisual .mainSlide .inner a {
@@ -154,6 +158,14 @@
     color: #333;
     background: #fff;
 }
+
+
+/*mainContent.....................................*/
+
+
+
+
+
 
 .mainContent {
     text-align: center;
@@ -190,7 +202,7 @@
     margin: 30px auto;
     border: 1px solid #666666;
     color: #666666;
-    padding: 10px 20px;
+    padding: 10px 50px;
     text-transform: uppercase;
 
 }
@@ -224,23 +236,23 @@
 }
 
 
+/*news..................................*/
 
 
 
-
-.mainContent2 {
+.news {
     padding: 100px 0;
     text-align: center;
 }
 
-.mainContent2 h2 {
+.news h2 {
     font-size: 40px;
     font-weight: 700;
     margin: 0 0 20px 0;
     color: #666666
 }
 
-.mainContent2 p {
+.news p {
     font-size: 25px;
     font-weight: 500;
     color: #666666;
@@ -250,17 +262,17 @@
 
 
 
-.mainContent2 a {
+.news .first {
     display: inline-block;
     margin: 30px auto;
     border: 1px solid #666666;
     color: #666666;
-    padding: 10px 20px;
+    padding: 10px 50px;
     text-transform: uppercase;
 
 }
 
-.mainContent2 a:hover {
+.news .first:hover {
     background: #666666;
     color: #fff;
 }
@@ -268,33 +280,46 @@
 
 
 
-.mainContent2 .inner {
+.news .inner {
     width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px 30px;
+    gap: 30px;
     height: auto;
     background: transparent;
     margin: 50px auto;
 
 }
 
-.mainContent2 figure {
+.news figure {
     position: relative;
 }
 
-.mainContent2 .inner figure {
+.news .inner figure {
+    position: relative;
     font-size: 18px;
     line-height: 50px;
     color: #666666;
 }
 
-.mainContent2 img {
+.news img {
     width: 100%;
     height: 250px;
 }
 
+.news .inner figure .more {
+    right: 0;
+    bottom: 100%;
+    position: absolute;
+}
 
+
+.news .inner figure i {
+    vertical-align: middle;
+}
+
+
+/*mainBanner.........................................*/
 
 .mainBanner {
     padding: 100px 0;
@@ -329,7 +354,7 @@
     margin: 30px auto;
     border: 1px solid #666666;
     color: #666666;
-    padding: 10px 20px;
+    padding: 10px 50px;
     text-transform: uppercase;
 
 }
@@ -358,6 +383,7 @@
 
 .mainBanner .inner figure:hover {
     filter: brightness(1.7);
+
 }
 
 .mainBanner .inner p {
@@ -367,9 +393,146 @@
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 20px;
+    text-shadow: 0 0 3px #000;
+
 }
 
-/* FOOTER */
+
+
+/* NETWORK ............................................*/
+
+.network {
+    padding: 100px 0;
+    text-align: center;
+    background: url(../img/global-bg.jpg)no-repeat center center/cover;
+    height: 1000px;
+    color: #666666;
+
+}
+
+
+.network h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+
+.network p {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+
+    line-height: 25px;
+}
+
+.network a {
+    display: inline-block;
+    margin: 30px auto;
+    border: 1px solid #666666;
+    color: #666666;
+    padding: 10px 50px;
+    text-transform: uppercase;
+
+}
+
+.network a:hover {
+    color: #fff;
+    background: #666666;
+}
+
+
+.network .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 10px auto;
+}
+
+
+.network .inner figure {
+    position: relative;
+    flex: 1;
+    text-align: center;
+
+}
+
+
+
+/* cs section ..................................... */
+
+.cs {
+    display: flex;
+
+    height: 359px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    background: #3e7ccc;
+}
+
+.cs>div {
+    flex: 1;
+
+}
+
+.cs .left {
+    border-right: 1px solid #83a4cf;
+    max-height: 250px;
+    margin: 50px auto;
+
+}
+
+.cs h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.cs .left h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    line-height: 35px;
+
+}
+
+.cs .right {
+    max-height: 250px;
+    margin: 50px auto;
+
+}
+
+.cs .right h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+    line-height: 35px;
+
+}
+
+
+.cs p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    line-height: 25px;
+}
+
+.cs a {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+
+}
+
+.cs a:hover {
+    background: #fff;
+    color: #666;
+}
+
+
+
+/* FOOTER ............................................. */
 
 .footer {
     background: #f3f3f3;
